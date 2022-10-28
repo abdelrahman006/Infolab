@@ -1,0 +1,1 @@
+# -*- coding: utf-8 -*-from odoo import models, fieldsclass CRMLeadInherit(models.Model):    _inherit = 'crm.lead'    amount = fields.Float(string="Amount",  required=False, )    type_ids = fields.Many2many(comodel_name="crm.type", string="Type")    payment_term_id = fields.Many2one(comodel_name="account.payment.term", string="Payment Term", required=False, )

@@ -1,0 +1,1 @@
+# -*- coding: utf-8 -*-from odoo import models, fieldsclass SaleOrderLineInherit(models.Model):    _inherit = 'sale.order.line'    users_no = fields.Integer(string="No. Of Users", required=False, )
